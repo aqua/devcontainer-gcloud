@@ -3,8 +3,6 @@ set -e
 
 VERSION=${VERSION:-"latest"}
 
-df -h
-
 echo "Activating feature 'gcloud'"
 echo "Installing Google Cloud CLI version: ${VERSION}"
 
@@ -41,37 +39,37 @@ fi
 
 apt-get install -y --no-install-recommends google-cloud-cli${INSTALL_VERSION}
 
-if [ "${DATASTORE_EMULATOR:-false}" = "true" ; then
+if [ "${DATASTORE_EMULATOR:-false}" = "true" ] ; then
   echo "Installing google-cloud-cli-datastore-emulator..."
-  apt-get install -y --no-install-recommends\
+  apt-get install -y --no-install-recommends \
     google-cloud-cli-datastore-emulator
 fi
-if [ "${FIRESTORE_EMULATOR:-false}" = "true" ; then
+if [ "${FIRESTORE_EMULATOR:-false}" = "true" ] ; then
   echo "Installing google-cloud-cli-firestore-emulator..."
-  apt-get install -y --no-install-recommends\
+  apt-get install -y --no-install-recommends \
     google-cloud-cli-firestore-emulator
 fi
-if [ "${BIGTABLE_EMULATOR:-false}" = "true" ; then
+if [ "${BIGTABLE_EMULATOR:-false}" = "true" ] ; then
   echo "Installing google-cloud-cli-bigtable-emulator..."
   apt-get install -y --no-install-recommends \
     google-cloud-cli-bigtable-emulator
 fi
-if [ "${PUBSUB_EMULATOR:-false}" = "true" ; then
+if [ "${PUBSUB_EMULATOR:-false}" = "true" ] ; then
   echo "Installing google-cloud-cli-pubsub-emulator..."
   apt-get install -y --no-install-recommends \
     google-cloud-cli-pubsub-emulator
 fi
-if [ "${APPENGINE_GO:-false}" = "true" ; then
+if [ "${APPENGINE_GO:-false}" = "true" ] ; then
   echo "Installing google-cloud-cli-app-engine-go..."
   apt-get install -y --no-install-recommends\
     google-cloud-cli-app-engine-go
 fi
-if [ "${APPENGINE_JAVA:-false}" = "true" ; then
+if [ "${APPENGINE_JAVA:-false}" = "true" ] ; then
   echo "Installing google-cloud-cli-app-engine-java..."
   apt-get install -y --no-install-recommends \
     google-cloud-cli-app-engine-java
 fi
-if [ "${APPENGINE_PYTHON:-false}" = "true" ; then
+if [ "${APPENGINE_PYTHON:-false}" = "true" ] ; then
   echo "Installing google-cloud-cli-app-engine-python..."
   apt-get install -y --no-install-recommends \
     google-cloud-cli-app-engine-python \
