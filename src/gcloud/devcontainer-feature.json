@@ -1,8 +1,8 @@
 {
   "name": "Google Cloud CLI",
   "id": "gcloud",
-  "version": "1.0.1",
-  "description": "Installs the Google Cloud CLI (gcloud) for managing Google Cloud resources.",
+  "version": "1.0.2",
+  "description": "Installs the Google Cloud CLI (gcloud) for managing Google Cloud resources or using local emulators & SDKs.",
   "options": {
     "version": {
       "type": "string",
