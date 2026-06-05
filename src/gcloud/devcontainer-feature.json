@@ -1,0 +1,51 @@
+{
+  "name": "Google Cloud CLI",
+  "id": "gcloud",
+  "version": "1.0.1",
+  "description": "Installs the Google Cloud CLI (gcloud) for managing Google Cloud resources.",
+  "options": {
+    "version": {
+      "type": "string",
+      "default": "latest",
+      "description": "Version of gcloud to install (e.g. 450.0.0)"
+    },
+    "datastore_emulator": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, also install the Datastore emulator"
+    },
+    "firestore_emulator": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, also install the Firestore emulator"
+    },
+    "bigtable_emulator": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, also install the Bigtable emulator"
+    },
+    "pubsub_emulator": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, also install the Pubsub emulator"
+    },
+    "appengine_go": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, also install the App Engine Go SDK"
+    },
+    "appengine_java": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, also install the App Engine Java SDK"
+    },
+    "appengine_python": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, also install the App Engine Python SDK"
+    }
+  },
+  "installsAfter": [
+      "ghcr.io/devcontainers/features/common-utils"
+  ]
+}

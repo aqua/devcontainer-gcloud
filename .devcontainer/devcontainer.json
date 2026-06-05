@@ -1,0 +1,14 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "./src/gcloud": {
+    }
+  },
+  "securityOpt": [
+	  "no-new-privileges"
+  ],
+  "capDrop": [ "NET_RAW" ],
+  "containerEnv": {
+    "DISABLE_AUTO_TITLE": "true"
+  }
+}

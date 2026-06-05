@@ -1,0 +1,75 @@
+{
+    "gcloud_basic": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "gcloud": {}
+        },
+        "testScript": "./test.sh"
+    },
+    "gcloud_with_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "gcloud": {
+                "version": "latest"
+            }
+        },
+        "testScript": "./test.sh"
+    },
+    "gcloud_with_datastore_emulator": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "gcloud": {
+                "datastore_emulator": true
+            }
+        },
+        "testScript": "./test.sh"
+    },
+    "gcloud_with_firestore_emulator": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "gcloud": {
+                "firestore_emulator": true
+            }
+        }
+    },
+    "gcloud_with_bigtable_emulator": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "gcloud": {
+                "bigtable_emulator": true
+            }
+        }
+    },
+    "gcloud_with_pubsub_emulator": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "gcloud": {
+                "pubsub_emulator": true
+            }
+        }
+    },
+    "gcloud_with_appengine_go": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "gcloud": {
+                "appengine_go": true
+            }
+        }
+    },
+    "gcloud_with_appengine_java": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "gcloud": {
+                "appengine_java": true
+            }
+        }
+    },
+    "gcloud_with_appengine_python": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "gcloud": {
+                "appengine_python": true
+            }
+        }
+    }
+}
