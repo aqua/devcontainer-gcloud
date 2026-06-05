@@ -1,7 +1,7 @@
 
 # Google Cloud CLI (gcloud)
 
-Installs the Google Cloud CLI (gcloud) for managing Google Cloud resources.
+Installs the Google Cloud CLI (gcloud) for managing Google Cloud resources or using local emulators & SDKs.
 
 ## Example Usage
 
