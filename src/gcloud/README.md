@@ -34,4 +34,4 @@ need to increase your Docker disk resource limits.
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/aqua/devcontainer-gcloud/blob/main/./gcloud/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/aqua/devcontainer-gcloud/blob/main/src/gcloud/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
