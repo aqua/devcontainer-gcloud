@@ -39,15 +39,18 @@ fi
 
 apt-get install -y --no-install-recommends google-cloud-cli${INSTALL_VERSION}
 
+# https://issuetracker.google.com/issues/520052955 -- google's
+# APT repository declares the wrong Depends: for JDK-using emulators
+
 if [ "${DATASTORE_EMULATOR:-false}" = "true" ] ; then
   echo "Installing google-cloud-cli-datastore-emulator..."
   apt-get install -y --no-install-recommends \
-    google-cloud-cli-datastore-emulator
+    google-cloud-cli-datastore-emulator openjdk-21-jdk
 fi
 if [ "${FIRESTORE_EMULATOR:-false}" = "true" ] ; then
   echo "Installing google-cloud-cli-firestore-emulator..."
   apt-get install -y --no-install-recommends \
-    google-cloud-cli-firestore-emulator
+    google-cloud-cli-firestore-emulator openjdk-21-jdk
 fi
 if [ "${BIGTABLE_EMULATOR:-false}" = "true" ] ; then
   echo "Installing google-cloud-cli-bigtable-emulator..."
@@ -57,7 +60,7 @@ fi
 if [ "${PUBSUB_EMULATOR:-false}" = "true" ] ; then
   echo "Installing google-cloud-cli-pubsub-emulator..."
   apt-get install -y --no-install-recommends \
-    google-cloud-cli-pubsub-emulator
+    google-cloud-cli-pubsub-emulator openjdk-21-jdk
 fi
 if [ "${APPENGINE_GO:-false}" = "true" ] ; then
   echo "Installing google-cloud-cli-app-engine-go..."

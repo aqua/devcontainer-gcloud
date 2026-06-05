@@ -2,9 +2,10 @@
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
     "./src/gcloud": {
+      "datastore_emulator": true
     }
   },
-  "securityOpt": [
+  "disabled-securityOpt": [
 	  "no-new-privileges"
   ],
   "capDrop": [ "NET_RAW" ],
